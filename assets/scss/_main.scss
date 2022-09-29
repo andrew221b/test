@@ -84,8 +84,11 @@
         margin-top: 51px;
     }
 
-    background-color: white;
+    @media (max-width: 1150px) {
+        padding-right: 41px;
+    }
 
+    background-color: white;
     box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
     border-radius: 30px;
     padding-left: 41px;
@@ -135,7 +138,7 @@
         grid-template-rows: repeat(8, 69px);
 
         @media (max-width: 800px) {
-            grid-template-rows: repeat(4, 220px);
+            grid-template-rows: repeat(8, 220px);
             grid-template-columns: 1fr 1fr;
             gap: 20px;
         }
@@ -154,7 +157,7 @@
 
         @media (max-width: 800px) {
             grid-template-columns: 1fr;
-            border: 1px solid #EEEEEE;
+            border: 1px solid #d5d5d5;
             padding-left: 20px;
         }
 

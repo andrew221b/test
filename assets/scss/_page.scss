@@ -172,7 +172,7 @@
 
 .hamburger__layer {
   display: block;
-  width: 25px;
+  width: 32px;
   height: 4px;
   background: black;
   position: relative;
@@ -194,11 +194,11 @@
 }
 
 .hamburger__layer:before {
-  bottom: 120%;
+  bottom: 170%;
 }
 
 .hamburger__layer:after {
-  top: 120%;
+  top: 170%;
 }
 
 .hamburger__icon--to-arrow {

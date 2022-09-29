@@ -251,7 +251,7 @@ address {
 
   display: block;
 
-  width: 25px;
+  width: 32px;
   height: 4px;
 
   -webkit-animation-duration: 300ms;
@@ -282,11 +282,11 @@ address {
 }
 
 .hamburger__layer:before {
-  bottom: 120%;
+  bottom: 170%;
 }
 
 .hamburger__layer:after {
-  top: 120%;
+  top: 170%;
 }
 
 .hamburger__icon--to-arrow {
@@ -756,6 +756,9 @@ address {
 
     background: #eeeeee;
   }
+  .client {
+    padding-right: 41px;
+  }
 }
 
 @media (max-width: 1050px) {
@@ -771,12 +774,12 @@ address {
   .client__grid {
     gap: 20px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(4, 220px);
+    grid-template-rows: repeat(8, 220px);
   }
   .client-box {
     padding-left: 20px;
 
-    border: 1px solid #eeeeee;
+    border: 1px solid #d5d5d5;
 
     grid-template-columns: 1fr;
   }
