@@ -137,14 +137,19 @@
         display: grid;
         grid-template-rows: repeat(8, 69px);
 
+        @media (max-width: 1150px) {
+
+        }
+
         @media (max-width: 800px) {
-            grid-template-rows: repeat(8, 220px);
+            grid-template-rows: repeat(4, 220px);
             grid-template-columns: 1fr 1fr;
             gap: 20px;
         }
 
         @media (max-width: 572px) {
             grid-template-columns: 1fr;
+            grid-template-rows: repeat(8, 220px);
         }
     }
 

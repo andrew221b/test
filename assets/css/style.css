@@ -774,7 +774,7 @@ address {
   .client__grid {
     gap: 20px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(8, 220px);
+    grid-template-rows: repeat(4, 220px);
   }
   .client-box {
     padding-left: 20px;
@@ -802,6 +802,7 @@ address {
 @media (max-width: 572px) {
   .client__grid {
     grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 220px);
   }
 }
 
