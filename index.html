@@ -16,18 +16,23 @@
 <body>
   <div class="container">
     <header class="header">
-
       <div class="sidebar">
         <a href="" class="logo">
           <div class="logo-pic">
-            <img src="assets/img/setting 1.svg" alt="logo-pic">
+            <img src="assets/img/setting1.svg" alt="logo-pic">
           </div>
           <strong class="logo-txt">Dashboard</strong>
           <div class="logo-version">v.01</div>
         </a>
 
         <nav class="navbar">
-          <ul class="navbar-list">
+          <div class="hamburger">
+            <button class="hamburger__icon">
+              <span class="hamburger__layer"></span>
+            </button>
+          </div>
+
+          <ul class="navbar-list navbar-list--off">
             <li class="navbar-item">
               <div class="navbar-item__pic">
                 <img src="assets/img/navbar_pic/key-square.svg" alt="">
@@ -37,35 +42,35 @@
 
             <li class="navbar-item">
               <div class="navbar-item__pic">
-                <img src="assets/img/navbar_pic/3d-square 1.svg" alt="">
+                <img src="assets/img/navbar_pic/3d-square1.svg" alt="">
               </div>
               <div class="navbar-item__descr">Product</div>
             </li>
 
             <li class="navbar-item active">
               <div class="navbar-item__pic">
-                <img src="assets/img/navbar_pic/user-square 1.svg" alt="">
+                <img src="assets/img/navbar_pic/user-square1.svg" alt="">
               </div>
               <div class="navbar-item__descr active">Customers</div>
             </li>
 
             <li class="navbar-item">
               <div class="navbar-item__pic">
-                <img src="assets/img/navbar_pic/wallet-money 2.svg" alt="">
+                <img src="assets/img/navbar_pic/wallet-money2.svg" alt="">
               </div>
               <div class="navbar-item__descr">Income</div>
             </li>
 
             <li class="navbar-item">
               <div class="navbar-item__pic">
-                <img src="assets/img/navbar_pic/discount-shape 1.svg" alt="">
+                <img src="assets/img/navbar_pic/discount-shape1.svg" alt="">
               </div>
               <div class="navbar-item__descr">Promote</div>
             </li>
 
             <li class="navbar-item">
               <div class="navbar-item__pic">
-                <img src="assets/img/navbar_pic/message-question 1.svg" alt="">
+                <img src="assets/img/navbar_pic/message-question1.svg" alt="">
               </div>
               <div class="navbar-item__descr">Help</div>
             </li>
@@ -75,121 +80,138 @@
 
         <a href="" class="header-user">
           <div class="header-user__pic">
-            <img src="assets/img/Ellipse 8.png" alt="">
+            <img src="assets/img/Ellipse8.png" alt="">
           </div>
           <div class="header-user__description">
             <div class="header-user__name">Evano</div>
-            <div class="header-user__positioon">Project Manager</div>
+            <div class="header-user__position">Project Manager</div>
           </div>
         </a>
       </div>
-
     </header>
 
-
     <main class="main">
-      <h1 class="main-title">
-        Hello Evano 👋🏼,
-      </h1>
+      <section>
+        <h1 class="main-title">
+          Hello Evano 👋🏼,
+        </h1>
 
-      <div class="client-list">
-        <div class="customers">
-          <div class="customers__flex">
-            <div class="customers-intro">
-              <h2 class="customers-intro__title">All Customers</h2>
-              <div class="customers-intro__status">Active Members</div>
-            </div>
-
-            <div class="customers-search">
-              <div class="customers-search__pic">
-                <img src="assets/img/search 1.svg" alt="">
+        <div class="client">
+          <div class="customers">
+            <div class="customers__flex">
+              <div class="customers-intro">
+                <h2 class="customers-intro__title">All Customers</h2>
+                <div class="customers-intro__status">Active Members</div>
               </div>
-              <input class="customers-search__input" type="search" placeholder="Search">
+
+              <div class="customers-search">
+                <div class="customers-search__pic">
+                  <img src="assets/img/search1.svg" alt="">
+                </div>
+                <input class="customers-search__input" type="search" placeholder="Search">
+              </div>
+            </div>
+          </div>
+
+          <div class="wrap">
+            <div class="client-col">
+              <h3 class="client-col__title">Customer Name</h3>
+              <h3 class="client-col__title">Company</h3>
+              <h3 class="client-col__title">Phone Number</h3>
+              <h3 class="client-col__title">Email</h3>
+              <h3 class="client-col__title">Country</h3>
+              <h3 class="client-col__title">Status</h3>
+            </div>
+
+            <div class="client__grid">
+              <address class="client-box">
+                <div class="client-box__text">Jane Cooper</div>
+                <div class="client-box__text">Microsoft</div>
+                <div class="client-box__text">(225) 555-0118</div>
+                <div class="client-box__text">jane@microsoft.com</div>
+                <div class="client-box__text">United States</div>
+                <div class="client-box__status">Active</div>
+              </address>
+              <address class="client-box">
+                <div class="client-box__text">Floyd Miles</div>
+                <div class="client-box__text">Yahoo</div>
+                <div class="client-box__text">(205) 555-0100</div>
+                <div class="client-box__text">floyd@yahoo.com</div>
+                <div class="client-box__text">Kiribati</div>
+                <div class="client-box__status client-box__status--inactive">Inactive</div>
+              </address>
+              <address class="client-box">
+                <div class="client-box__text">Ronald Richards</div>
+                <div class="client-box__text">Adobe</div>
+                <div class="client-box__text">(302) 555-0107</div>
+                <div class="client-box__text">ronald@adobe.com</div>
+                <div class="client-box__text">Israel</div>
+                <div class="client-box__status client-box__status--inactive">Inactive</div>
+              </address>
+              <address class="client-box">
+                <div class="client-box__text">Marvin McKinney</div>
+                <div class="client-box__text">Tesla</div>
+                <div class="client-box__text">(252) 555-0126</div>
+                <div class="client-box__text">marvin@tesla.com</div>
+                <div class="client-box__text">Iran</div>
+                <div class="client-box__status">Active</div>
+              </address>
+              <address class="client-box">
+                <div class="client-box__text">Jerome Bell</div>
+                <div class="client-box__text">Google</div>
+                <div class="client-box__text">(629) 555-0129</div>
+                <div class="client-box__text">jerome@google.com</div>
+                <div class="client-box__text">Réunion</div>
+                <div class="client-box__status">Active</div>
+              </address>
+              <address class="client-box">
+                <div class="client-box__text">Kathryn Murphy</div>
+                <div class="client-box__text">Microsoft</div>
+                <div class="client-box__text">(406) 555-0120</div>
+                <div class="client-box__text">kathryn@microsoft.com</div>
+                <div class="client-box__text">Curaçao</div>
+                <div class="client-box__status">Active</div>
+              </address>
+              <address class="client-box">
+                <div class="client-box__text">Jacob Jones</div>
+                <div class="client-box__text">Yahoo</div>
+                <div class="client-box__text">(208) 555-0112</div>
+                <div class="client-box__text">jacob@yahoo.com</div>
+                <div class="client-box__text">Brazil</div>
+                <div class="client-box__status">Active</div>
+              </address>
+              <address class="client-box">
+                <div class="client-box__text">Kristin Watson</div>
+                <div class="client-box__text">Facebook</div>
+                <div class="client-box__text">(704) 555-0127</div>
+                <div class="client-box__text">kristin@facebook.com</div>
+                <div class="client-box__text">Åland Islands</div>
+                <div class="client-box__status client-box__status--inactive">Inactive</div>
+              </address>
+            </div>
+          </div>
+
+          <div class="wrapper">
+            <div class="client-note">Showing data 1 to 8 of 256K entries</div>
+
+            <div class="client-pages">
+              <div class="client-pages__btn">&lt;</div>
+              <div class="client-pages__btn active">1</div>
+              <div class="client-pages__btn">2</div>
+              <div class="client-pages__btn">3</div>
+              <div class="client-pages__btn">4</div>
+              <div class="client-pages__btn">...</div>
+              <div class="client-pages__btn">40</div>
+              <div class="client-pages__btn">&gt;</div>
             </div>
           </div>
         </div>
-
-        <div class="client-info">
-          <div class="client-col">
-            <h3 class="client-col__title">Customer Name</h3>
-            <h3 class="client-col__title">Company</h3>
-            <h3 class="client-col__title">Phone Number</h3>
-            <h3 class="client-col__title">Email</h3>
-            <h3 class="client-col__title">Country</h3>
-            <h3 class="client-col__title">Status</h3>
-          </div>
-
-          <div class="client__flex">
-            <div class="client-box">
-              <div class="client-box__card-text">Jane Cooper</div>
-              <div class="client-box__card-text">Microsoft</div>
-              <div class="client-box__card-text">(225) 555-0118</div>
-              <div class="client-box__card-text">jane@microsoft.com</div>
-              <div class="client-box__card-text">United States</div>
-              <div class="client-box__card-btn">Active</div>
-            </div>
-            <div class="client-box">
-              <div class="client-box__card-text">Floyd Miles</div>
-              <div class="client-box__card-text">Yahoo</div>
-              <div class="client-box__card-text">(205) 555-0100</div>
-              <div class="client-box__card-text">floyd@yahoo.com</div>
-              <div class="client-box__card-text">Kiribati</div>
-              <div class="client-box__card-btn client-box__card-btn--inactive">Inactive</div>
-            </div>
-            <div class="client-box">
-              <div class="client-box__card-text">Ronald Richards</div>
-              <div class="client-box__card-text">Adobe</div>
-              <div class="client-box__card-text">(302) 555-0107</div>
-              <div class="client-box__card-text">ronald@adobe.com</div>
-              <div class="client-box__card-text">Israel</div>
-              <div class="client-box__card-btn client-box__card-btn--inactive">Inactive</div>
-            </div>
-            <div class="client-box">
-              <div class="client-box__card-text">Marvin McKinney</div>
-              <div class="client-box__card-text">Tesla</div>
-              <div class="client-box__card-text">(252) 555-0126</div>
-              <div class="client-box__card-text">marvin@tesla.com</div>
-              <div class="client-box__card-text">Iran</div>
-              <div class="client-box__card-btn">Active</div>
-            </div>
-            <div class="client-box">
-              <div class="client-box__card-text">Jerome Bell</div>
-              <div class="client-box__card-text">Google</div>
-              <div class="client-box__card-text">(629) 555-0129</div>
-              <div class="client-box__card-text">jerome@google.com</div>
-              <div class="client-box__card-text">Réunion</div>
-              <div class="client-box__card-btn">Active</div>
-            </div>
-            <div class="client-box">
-              <div class="client-box__card-text">Kathryn Murphy</div>
-              <div class="client-box__card-text">Microsoft</div>
-              <div class="client-box__card-text">(406) 555-0120</div>
-              <div class="client-box__card-text">kathryn@microsoft.com</div>
-              <div class="client-box__card-text">Curaçao</div>
-              <div class="client-box__card-btn">Active</div>
-            </div>
-            <div class="client-box">
-              <div class="client-box__card-text">Jacob Jones</div>
-              <div class="client-box__card-text">Yahoo</div>
-              <div class="client-box__card-text">(208) 555-0112</div>
-              <div class="client-box__card-text">jacob@yahoo.com</div>
-              <div class="client-box__card-text">Brazil</div>
-              <div class="client-box__card-btn">Active</div>
-            </div>
-            <div class="client-box">
-              <div class="client-box__card-text">Kristin Watson</div>
-              <div class="client-box__card-text">Facebook</div>
-              <div class="client-box__card-text">(704) 555-0127</div>
-              <div class="client-box__card-text">kristin@facebook.com</div>
-              <div class="client-box__card-text">Åland Islands</div>
-              <div class="client-box__card-btn client-box__card-btn--inactive">Inactive</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
+      </section>
     </main>
   </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>

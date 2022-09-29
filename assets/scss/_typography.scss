@@ -18,11 +18,17 @@ ul {
 
   body {
     background-color: #FAFBFF;
+    -webkit-tap-highlight-color: transparent;
   }
 
   
 html {
     font-size: 14px;
+    line-height: 21px;
     font-weight: 500;
     font-family: 'Poppins', sans-serif;
   }
+
+address {
+  font-style: normal;
+}
