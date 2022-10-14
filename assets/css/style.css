@@ -168,6 +168,11 @@
 
   border-radius: 233px;
   background: black;
+
+  -webkit-filter: blur(1px);
+  -webkit-filter: drop-shadow(0 0 1px rgb(94, 94, 94));
+          filter: blur(1px);
+          filter: drop-shadow(0 0 1px rgb(94, 94, 94));
 }
 .circle::before {
   position: absolute;
@@ -177,12 +182,15 @@
   height: 466px;
 
   content: "";
-  -webkit-animation: rot 10s linear infinite;
-          animation: rot 10s linear infinite;
+  -webkit-animation: rot 13s linear infinite;
+          animation: rot 13s linear infinite;
 
   border-radius: 233px;
   background: -o-radial-gradient(bottom, 38% 40%, #000000 165%, #890019 260%);
   background:    radial-gradient(38% 40% at bottom, #000000 165%, #890019 260%);
+
+  -webkit-filter: blur(0.5em);
+          filter: blur(0.5em);
 }
 .circle::after {
   position: absolute;
@@ -192,16 +200,16 @@
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
-  -webkit-animation: rot2 10s linear infinite;
-          animation: rot2 10s linear infinite;
+  -webkit-animation: rot2 13s linear infinite;
+          animation: rot2 13s linear infinite;
 
   border-radius: 50%;
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(30%, #b40223), color-stop(50%, #121212));
-  background: -o-linear-gradient(top left, #b40223 30%, #121212 50%);
-  background:    linear-gradient(to bottom right, #b40223 30%, #121212 50%);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(20%, #630012), color-stop(50%, rgba(53, 25, 25, 0.2588235294)));
+  background: -o-linear-gradient(top left, #630012 20%, rgba(53, 25, 25, 0.2588235294) 50%);
+  background:    linear-gradient(to bottom right, #630012 20%, rgba(53, 25, 25, 0.2588235294) 50%);
 
-  -webkit-filter: blur(2.5em);
-          filter: blur(2.5em);
+  -webkit-filter: blur(2em);
+          filter: blur(2em);
   inset: -0.5em;
 }
 

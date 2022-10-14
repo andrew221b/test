@@ -96,6 +96,8 @@
     right: 0;
     border-radius: 233px;
     background: black;
+    filter: blur(1px);
+    filter: drop-shadow(0 0 1px rgb(94, 94, 94));
 
 &::before {
   content: '';
@@ -106,8 +108,9 @@
       height: 466px;
       position: absolute;
       border-radius: 233px;
-      animation: rot 10s linear infinite;
+      animation: rot 13s linear infinite;
       z-index: 2;
+      filter: blur(.5em);
 }  
     
     &::after {
@@ -115,12 +118,12 @@
       position: absolute;
       inset: -.5em;
       background: linear-gradient(to bottom right, 
-      #b40223 30%, #121212 50%);
-     filter: blur(2.5em);
+      #630012 20%, #35191942 50%);
+     filter: blur(2em);
       border-radius: 50%;
       z-index: 1;
      transform: rotate(45deg);
-      animation: rot2 10s linear infinite;
+      animation: rot2 13s linear infinite;
     }
   }
   
