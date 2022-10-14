@@ -97,13 +97,13 @@
     border-radius: 233px;
     background: black;
     filter: blur(1px);
-    filter: drop-shadow(0 0 1px rgb(94, 94, 94));
+    filter: drop-shadow(0 0 1px rgb(58, 58, 58));
 
 &::before {
   content: '';
   background: radial-gradient(
       38% 40% at bottom, /* adjust the 400% to control the curve */
-      #000000 165%,  #890019 260%);
+      #000000 165%,  #790016 260%);
       width: 466px;
       height: 466px;
       position: absolute;

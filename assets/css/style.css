@@ -170,9 +170,9 @@
   background: black;
 
   -webkit-filter: blur(1px);
-  -webkit-filter: drop-shadow(0 0 1px rgb(94, 94, 94));
+  -webkit-filter: drop-shadow(0 0 1px rgb(58, 58, 58));
           filter: blur(1px);
-          filter: drop-shadow(0 0 1px rgb(94, 94, 94));
+          filter: drop-shadow(0 0 1px rgb(58, 58, 58));
 }
 .circle::before {
   position: absolute;
@@ -186,8 +186,8 @@
           animation: rot 13s linear infinite;
 
   border-radius: 233px;
-  background: -o-radial-gradient(bottom, 38% 40%, #000000 165%, #890019 260%);
-  background:    radial-gradient(38% 40% at bottom, #000000 165%, #890019 260%);
+  background: -o-radial-gradient(bottom, 38% 40%, #000000 165%, #790016 260%);
+  background:    radial-gradient(38% 40% at bottom, #000000 165%, #790016 260%);
 
   -webkit-filter: blur(0.5em);
           filter: blur(0.5em);
